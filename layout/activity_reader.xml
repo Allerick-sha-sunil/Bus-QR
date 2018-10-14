@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ReaderActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Payment"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_alignRight="@id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:background="@color/colorGrey"/>
+        //android:entries="@array/stops"
+        //android:prompt="@string/spinner_title" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:background="@color/colorGrey" />
+
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextResult"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:focusableInTouchMode="true"
+        android:text="SCAN" />
+
+    <requestFocus />
+
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGrey"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLength="1000"
+        android:windowSoftInputMode="stateHidden" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="35dp"
+        android:text="Source"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="15dp"
+        android:text="Destination"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="26dp"
+        android:text="Amount"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+
+
+
+</RelativeLayout>
